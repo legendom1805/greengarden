@@ -1,33 +1,21 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './components/home';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/aboutus';
 import Privacypolicy from './components/privacypolicy';
 import Disclaimer from './components/disclaimer';
+
 function App() {
-  const router = createBrowserRouter([
-    {
-      path:  "/greengarden/",
-      element: <><Navbar/><Home/></>
-    },
-    {
-      path:  "/greengarden/about",
-      element: <><Navbar/><About/></>
-    },
-    {
-      path:  "/greengarden/privacy",
-      element: <><Navbar/><Privacypolicy/></>
-    },
-    {
-      path:  "/greengarden/disclaimer",
-      element: <><Navbar/><Disclaimer/></>
-    }
-  ])
   return (
-    <div className="App">
-     <RouterProvider router = {router}/>
-    </div>
+    <BrowserRouter basename="/greengarden"> {/* Set basename here */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/privacy" element={<Privacypolicy/>} />
+        <Route path="/disclaimer" element={<Disclaimer/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
