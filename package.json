@@ -1,6 +1,7 @@
 {
-  "name": "tutorial",
-  "private": false,
+  "name": "greengardenblogs",
+  "homepage" : "https://legendom1805.github.io/greengarden/",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
 
