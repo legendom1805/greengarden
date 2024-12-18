@@ -23,7 +23,7 @@ export default function Cards() {
             <div className="card" key={card.id}>
               <div className="image">
                 <Link>
-                  <img src="src/assets/Main Thumbnail.png" alt="Card Thumbnail" />
+                  <img src="Main Thumbnail.png" alt="Card Thumbnail" />
                 </Link>
               </div>
               <div className="info">

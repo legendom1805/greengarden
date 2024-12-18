@@ -10,7 +10,7 @@ export default function Navbar() {
             <nav className="first-nav">
                 <div className="nav">
                     <div id="logoname">
-                        <img id="logo" src='src/assets/android-chrome-192x192.png' />
+                        <img id="logo" src='android-chrome-192x192.png' />
                         <h6 id="title">Green Garden</h6>
                     </div>
                     <div id="search">

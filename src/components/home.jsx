@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <div id='parent-div'>
       <div id="img">
-        <img id="banner" src="src/assets/GGLogowhite.png" />
+        <img id="banner" src="GGLogowhite.png" />
       </div>
 
       <div className="featured-card">
         <div className="img-container">
           <Link>
-            <img src='src/assets/Main Thumbnail.png' />
+            <img src='Main Thumbnail.png' />
           </Link>
         </div>
         <div className="post-info">
