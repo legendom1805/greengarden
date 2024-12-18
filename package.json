@@ -3,10 +3,8 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://legendom1805.github.io/greengarden",
+
   "scripts": {
-    "predeploy" : "npm run build", 
-    "deploy": "gh-pages -d dist", 
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
