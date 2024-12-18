@@ -8,31 +8,25 @@ import Disclaimer from './components/disclaimer';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/greengarden/",
-      element: <Home/>,
-      children: [
-        {
-          path: "/greengarden/",
-          element: <><Navbar /><Home /></>
-        },
-        {
-          path: "/greengarden/about",
-          element: <><Navbar /><About/></>
-        },
-        {
-          path: "/greengarden/privacy",
-          element: <><Navbar /><Privacypolicy/></>
-        },
-        {
-          path: "/greengarden/disclaimer",
-          element: <><Navbar /><Disclaimer/></>
-        }
-      ]
+      path:  "/",
+      element: <><Navbar/><Home/></>
+    },
+    {
+      path:  "/about",
+      element: <><Navbar/><About/></>
+    },
+    {
+      path:  "/privacy",
+      element: <><Navbar/><Privacypolicy/></>
+    },
+    {
+      path:  "/disclaimer",
+      element: <><Navbar/><Disclaimer/></>
     }
   ])
   return (
     <div className="App">
-      <RouterProvider router={router} />
+     <RouterProvider router = {router}/>
     </div>
   );
 }
