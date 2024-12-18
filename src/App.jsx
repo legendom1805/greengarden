@@ -12,15 +12,15 @@ function App() {
       element: <><Navbar/><Home/></>
     },
     {
-      path:  "/about",
+      path:  "/greengarden/about",
       element: <><Navbar/><About/></>
     },
     {
-      path:  "/privacy",
+      path:  "/greengarden/privacy",
       element: <><Navbar/><Privacypolicy/></>
     },
     {
-      path:  "/disclaimer",
+      path:  "/greengarden/disclaimer",
       element: <><Navbar/><Disclaimer/></>
     }
   ])
