@@ -1,0 +1,77 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 247px;
+    height: 225px;
+    margin: 0 15px 0 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+.card img{
+    height: 150px;
+    width: 247px;
+    transition: transform .35s ease;
+}
+.card img:hover{
+    transform: scale(1.05);
+
+}
+
+.titlebody{
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+
+.title{
+    font-size: 16px;
+    font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.title:hover{
+    color: #91ffa2 ;
+    text-decoration: underline ;
+}
+
+.info{
+    padding: 10px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.333%); /* 3 cards per row */
+        height: auto; /* Adjust height */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+    .card {
+        width: calc(85%); /* 1 card per row (full width) */
+        height: auto;
+    }
+
+    #image img{
+        width: calc(100%);
+    }
+}
+
+
