@@ -8,7 +8,7 @@ import Disclaimer from './components/disclaimer';
 function App() {
   const router = createBrowserRouter([
     {
-      path:  "/",
+      path:  "/greengarden/",
       element: <><Navbar/><Home/></>
     },
     {
