@@ -27,13 +27,13 @@ export default function Navbar() {
                                 <NavLink className="items" to="/greengarden/">Home</NavLink>
                             </li>
                             <li className="list-items">
-                                <NavLink className="items" to="/about">About us</NavLink>
+                                <NavLink className="items" to="/greengarden/about">About us</NavLink>
                             </li>
                             <li className="list-items">
-                                <NavLink className="items" to="/privacy">Privacy Policy</NavLink>
+                                <NavLink className="items" to="/greengarden/privacy">Privacy Policy</NavLink>
                             </li>
                             <li className="list-items">
-                                <NavLink className="items" to="/disclaimer">Disclaimer</NavLink>
+                                <NavLink className="items" to="/greengarden/disclaimer">Disclaimer</NavLink>
                             </li>
                         </ul>
                     </div>
