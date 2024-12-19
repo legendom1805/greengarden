@@ -24,7 +24,7 @@ export default function Navbar() {
                     <div className="links" >
                         <ul className="list">
                             <li className="list-items">
-                                <NavLink className="items" to="">Home</NavLink>
+                                <NavLink className="items" to="/">Home</NavLink>
                             </li>
                             <li className="list-items">
                                 <NavLink className="items" to="/about">About us</NavLink>
