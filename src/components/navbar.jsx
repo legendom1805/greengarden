@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { NavLink } from 'react-router-dom'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import Sidenav from './sidenav'
 export default function Navbar() {
+    const [toggle,settoggle] = useState(false);
+    const closeNav = () => {
+        settoggle(false);
+    };
+
     return (
         <div id="main" >
             <nav className="first-nav">
                 <div className="nav">
+                    <div className="sidenav">
+                        <label htmlFor="checkbox" id="nav-toggle">
+                            <div className="bars"></div>
+                            <div className="bars"></div>
+                            <div className="bars"></div>
+                        </label>
+                        <input type="checkbox" id="checkbox" onClick={()=>{settoggle(!toggle)}}/>
+                        
+                    </div>
                     <div id="logoname">
                         <img id="logo" src='android-chrome-192x192.png' />
                         <h6 id="title">Green Garden</h6>
@@ -56,6 +71,9 @@ export default function Navbar() {
 
                 </div>
             </nav >
+
+            <Sidenav toggle={toggle} closeNav={closeNav}/>
+
         </div >
 
     )

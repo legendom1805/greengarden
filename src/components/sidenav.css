@@ -1,0 +1,35 @@
+.side-nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    left:-30vw;
+    width:30vw;
+    transition: left 0.3s ease;
+    height: 100%;
+    background-color:#001a2b ;
+    padding-top: 50px;
+
+}
+
+.visible{
+    left:0;
+}
+
+.hidden{
+    left:-30vw;
+}
+
+.list-items-side{
+    margin-bottom: 10px;
+}
+.items-side{
+    color:#91ffa2;
+    font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.close-btn{
+   margin-top: 30px;
+   background-color: #91ffa2;
+}

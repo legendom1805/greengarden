@@ -18,7 +18,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="post-info">
-          <h2 class="post-title">How I started gardening ?</h2>
+          <h2 className="post-title">How I started gardening ?</h2>
           <div className="post-details">
             <FontAwesomeIcon className='icons' icon={faUser} />
             <span id="user-name">Green Garden</span>
@@ -26,7 +26,7 @@ export default function Home() {
             <span id="date">Date</span>
           </div>
 
-          <span class="post-content">How I started gardening ?</span>
+          <span className="post-content">How I started gardening ?</span>
         </div>
 
       </div>
