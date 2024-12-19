@@ -118,6 +118,11 @@
     margin-bottom: 3px;
 }
 
+.blur{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
 
 
 @media (max-width: 480px) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -6,23 +6,49 @@ import { NavLink } from 'react-router-dom'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Sidenav from './sidenav'
 export default function Navbar() {
-    const [toggle,settoggle] = useState(false);
+    const [toggle, settoggle] = useState(false);
     const closeNav = () => {
         settoggle(false);
     };
+
+    useEffect(() => {
+        const clickoutside = (event) => {
+            let side_nav = document.querySelector('.sidenavtoggle');
+            // let main_content = document.querySelector('.main');
+            if (side_nav && !side_nav.contains(event.target) && toggle) {
+                closeNav();
+                // if (main_content) {
+                //     main_content.classList.add('blur');
+                // }
+            }
+        };
+
+        document.addEventListener('click', clickoutside);
+
+        return () => {
+            document.removeEventListener('click', clickoutside);
+        };
+    }, [toggle]);
+
+    // useEffect(() => {
+    //     const main_content = document.querySelector('.main');
+    //     if (main_content && !toggle) {
+    //         main_content.classList.remove('blur');
+    //     }
+    // }, [toggle]);
 
     return (
         <div id="main" >
             <nav className="first-nav">
                 <div className="nav">
-                    <div className="sidenav">
+                    <div className="sidenavtoggle">
                         <label htmlFor="checkbox" id="nav-toggle">
                             <div className="bars"></div>
                             <div className="bars"></div>
                             <div className="bars"></div>
                         </label>
-                        <input type="checkbox" id="checkbox" onClick={()=>{settoggle(!toggle)}}/>
-                        
+                        <input type="checkbox" id="checkbox" onClick={() => { settoggle(!toggle) }} />
+
                     </div>
                     <div id="logoname">
                         <img id="logo" src='android-chrome-192x192.png' />
@@ -72,7 +98,7 @@ export default function Navbar() {
                 </div>
             </nav >
 
-            <Sidenav toggle={toggle} closeNav={closeNav}/>
+            <Sidenav toggle={toggle} closeNav={closeNav} />
 
         </div >
 
