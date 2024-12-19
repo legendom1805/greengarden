@@ -7,7 +7,7 @@ import Disclaimer from './components/disclaimer';
 
 function App() {
   return (
-    <BrowserRouter basename="/greengarden"> 
+    <BrowserRouter basename="/greengarden/"> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
