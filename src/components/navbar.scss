@@ -36,14 +36,13 @@ $light-nav-background: #91ffa2;
 
 #logo {
     height: 52px;
-    margin-right: 1em;
 }
 
 
 #search {
 
     height: 70px;
-    width: 58px;
+    width: fit-content;
     margin-right: 47px;
     cursor: pointer;
     display: flex;
