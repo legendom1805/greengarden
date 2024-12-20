@@ -1,5 +1,10 @@
+$light-background: #caf8d1;
+$light-nav-background: #1d912e;
+$dark-background: #001a2b;
+$light-nav-background: #91ffa2;
+
 body{
-    background-color: #001a2b;
+    background-color: $light-background ;
 }
 
 /* Banner */
@@ -7,15 +12,20 @@ body{
     background-image: url(/tree-276014.jpg);
     background-size: cover;
     background-position: center; 
-    height: 200px; 
-    width: 100%;
+    margin-top: 30px;
+    height: 250px; 
+    width: 90vw;
+    margin: 30px auto auto auto ;
+    border-radius: 10px;
 }
 #img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; 
-    width: 100%;
+    height: 250px; 
+    width: 90vw;
+    border-radius: 10px;
+    margin: 30px auto auto auto ;
     background: rgba(0, 0, 0, 0.5);  
 }
 
@@ -33,6 +43,7 @@ body{
     background-color: white;
     margin:30px auto auto auto;
     width: 70vw;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     height: 340px;
     border-radius: 6px;
     padding: 10px;
@@ -102,19 +113,28 @@ body{
     width: 70vw;
     display: flex;
     align-items: center;
+    border-radius: 10px;
     height: 45px;
     padding-left: 10px;
-    background-color: #91ffa2 ;
+    background-color: $dark-background ;
 }
 
 #recent{
     font-family: Fira Sans, Arial, Helvetica, sans-serif;
     font-size: 15px;
+    color: $light-background;
 }
 
 .cards{
     width: 70vw;
     margin:30px auto 30px auto;
+}
+
+hr{
+    margin-top: 20px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: $dark-background;
 }
 
 /* For tablets and smaller screens */
@@ -166,6 +186,12 @@ body{
     .post-info{
         margin: 5px 10px 10px 10px;
     }
+
+    .cards{
+        width: 100vw;
+    }
+
+
 
 
 

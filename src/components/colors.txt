@@ -1,0 +1,4 @@
+$lght-background: #caf8d1;
+$light-nav-background: #1d912e;
+$dark-background: #001a2b;
+$light-nav-background: #91ffa2;

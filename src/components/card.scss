@@ -1,17 +1,28 @@
+$lght-background: #caf8d1;
+$light-nav-background: #1d912e;
+$dark-background: #001a2b;
+$light-nav-background: #91ffa2;
+
+
+
 .card{
     display: flex;
     flex-direction: column;
-    width: 247px;
+    align-items: center;
+    width: fit-content;
+    border-radius: 6px;
     height: 225px;
-    margin: 0 15px 0 15px;
-    margin-bottom: 30px;
-    background-color: white;
+    padding: 10px;
+    margin: 0 15px 30px 15px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     
 }
 .card img{
     height: 150px;
     width: 247px;
+    border-radius: 6px;
     transition: transform .35s ease;
 }
 .card img:hover{
@@ -21,6 +32,7 @@
 
 .titlebody{
     height: 20px;
+    width: 240px;
     overflow: hidden;
     margin-bottom: 10px;
 
@@ -36,10 +48,6 @@
 .title:hover{
     color: #91ffa2 ;
     text-decoration: underline ;
-}
-
-.info{
-    padding: 10px;
 }
 
 .cards-container{
@@ -65,7 +73,7 @@
 /* For very small devices (phones) */
 @media (max-width: 480px) {
     .card {
-        width: calc(85%); /* 1 card per row (full width) */
+        width: fit-content; /* 1 card per row (full width) */
         height: auto;
     }
 

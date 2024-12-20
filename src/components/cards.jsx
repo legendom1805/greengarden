@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faPerson, faUser } from '@fortawesome/free-solid-svg-icons'
-import './card.css'
+import './card.scss'
 export default function Cards() {
 
     const [cards, setCards] = useState([]);

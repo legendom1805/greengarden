@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import './navbar.css'
+import './navbar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { NavLink } from 'react-router-dom'
@@ -39,6 +39,7 @@ export default function Navbar() {
 
                 </div>
             </nav>
+            
             <nav className="sec-nav">
                 <div className="nav">
                     <div className="links" >
@@ -68,10 +69,6 @@ export default function Navbar() {
                             <FontAwesomeIcon className="icon brand-icons" icon={faInstagram} />
                         </li>
                     </ul>
-                    {/* <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form> */}
 
 
                 </div>

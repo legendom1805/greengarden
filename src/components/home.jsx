@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './home.scss'
 import Cards from './cards'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,6 +10,8 @@ export default function Home() {
       <div id="img">
         <img id="banner" src="GGLogowhite.png" />
       </div>
+
+      {/* <hr/> */}
 
       <div className="featured-card">
         <div className="img-container">

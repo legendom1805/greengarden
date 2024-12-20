@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Koulen&display=swap');
+$lght-background: #caf8d1;
+$light-nav-background: #1d912e;
+$dark-background: #001a2b;
+$light-nav-background: #91ffa2;
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.nav{
+
+.nav {
     width: 70vw;
     display: flex;
     margin: auto;
-    align-items:center ;
+    align-items: center;
 }
 
 
@@ -16,17 +21,17 @@
     display: flex;
     height: 70px;
     margin: auto;
-    color: white;
+    color: #001a2b;
     width: 70vx;
-    background-color: #001a2b;
+    background-color: #caf8d1;
     font-weight: 500;
     font-size: 15px;
     font-family: Fira Sans, Arial, Helvetica, sans-serif;
 }
 
-#title{
-  margin-bottom: 0px;
-  font-size: larger;
+#title {
+    margin-bottom: 0px;
+    font-size: larger;
 }
 
 #logo {
@@ -35,8 +40,8 @@
 }
 
 
-#search{
-    background-color: #91ffa2;
+#search {
+
     height: 70px;
     width: 58px;
     margin-right: 47px;
@@ -46,7 +51,7 @@
     align-items: center;
 }
 
-#logoname{
+#logoname {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,29 +61,47 @@
 .icon {
     font-size: 20px;
     cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
 }
 
 #btn-search {
-    color: #000000;
+    color: $dark-background;
     font-size: 20px;
-    
+
 }
 
 .sec-nav {
-    background-color: #91ffa2 !important;
-    color: #000000;
+    background-color: #1d912e;
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    color: #ffffff;
     font-weight: 500;
     font-size: 15px;
+    transition: all ease-in-out 0.3s;
     font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    border: 1px solid transparent;
+    box-sizing: border-box;
 }
 
-.list{
+.sec-nav:hover {
+    border: 1px solid white;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.list {
     padding-left: 0px;
     margin: 0px;
 }
 
-.list-items{
-    list-style-type: none ;
+.list-items {
+    list-style-type: none;
     display: inline-flex;
     height: 48px;
     justify-content: center;
@@ -87,42 +110,35 @@
     padding: 0 15px;
 }
 
-.items{
+.items {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: all ease-in-out 0.3s;
 }
 
-.items:hover{
+.items:hover {
     transform: translateY(-5px);
 }
 
-.links{
+.links {
     margin-right: auto;
     display: inline;
 }
 
 /*Side nav button*/
 
-#checkbox{
-    display: none;
-}
 
-.bars{
+.bars {
     display: none;
     height: 3px;
     width: 19px;
-    background-color: white;
+    background-color: $dark-background;
     margin-bottom: 3px;
 }
 
-.blur{
-    filter: blur(5px);
-    pointer-events: none;
 
-}
 
 .modal-overlay {
     position: fixed;
@@ -138,53 +154,45 @@
 
 
 @media (max-width: 480px) {
-    .nav{
+    .nav {
         width: 90vw;
     }
 
-    .bars{
+    .bars {
         display: block;
     }
 
-    #title{
+    #title {
         display: none;
     }
-    
-    #links{
+
+    #links {
         padding-left: 10px;
     }
 
-    #logoname{
-        margin:auto;
+    #logoname {
+        margin: auto;
     }
 
-    .list-items{
+    .list-items {
         height: fit-content;
         padding: 2px 5px;
     }
 
-    .items{
+    .items {
         font-size: 12px;
     }
 
-    #search{
+    #search {
         margin: 0;
     }
 
-    .icon{
+    .icon {
         font-size: 15px;
     }
 
-    .sec-nav{
+    .sec-nav {
         display: none;
     }
 
 }
-
-
-
-
-
-
-
-
