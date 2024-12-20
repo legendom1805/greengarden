@@ -11,8 +11,12 @@
     height: 100%;
     background-color:#001a2b ;
     padding-top: 50px;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+
 
 }
+
 
 .visible{
     left:0;
